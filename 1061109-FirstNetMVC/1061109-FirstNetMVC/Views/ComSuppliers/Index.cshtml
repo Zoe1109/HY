@@ -1,0 +1,543 @@
+﻿@model IEnumerable<_1061109_FirstNetMVC.Models.ComSupplier>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SuppName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuppNameS)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuppClassID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Trade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InvoName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RegionID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ZipCode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ZipCode1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ZipCode2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ZipCode3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Address3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ChiefName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CapTAL)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkMan)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkTitle)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.FaxNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelNo1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TelNo2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mobile1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Mobile2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmplID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Email)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WebSite)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreateDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StopDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeliID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InvoMode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuppID_I)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TaxWay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.InvoType)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CurrencyID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.IsTax)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ActNo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BankID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PurDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PurRDate)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sub_AP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sub_NP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sub_ADVSupp)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuppID_R)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CustID_R)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APMode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APDay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NPMode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NPDay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APLimit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CheckLimit)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NotCashCheck)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreditSum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BeginAP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BeginADV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.APSum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AdvSum)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnChkAP)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UnChkADV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuppNameEn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuppNameSEn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Conditions)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkManEn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.LinkTitalEn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Payment)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DeliWay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sub_CommiR)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Sub_Commi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MarkID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.SuppGrade)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Explain)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Memo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UdefT1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UdefT2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UdefT3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UdefD1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UdefD2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UdefN1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.UdefN2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.RecDay)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pointude)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pointude1)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pointude2)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Pointude3)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppxPath)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuppName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuppNameS)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuppClassID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Trade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InvoName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RegionID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ZipCode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ZipCode1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ZipCode2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ZipCode3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Address3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaxNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ChiefName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CapTAL)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkMan)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkTitle)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.FaxNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelNo1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TelNo2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mobile1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Mobile2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmplID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Email)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WebSite)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreateDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StopDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeliID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InvoMode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuppID_I)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TaxWay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.InvoType)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CurrencyID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.IsTax)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ActNo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BankID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PurDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PurRDate)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sub_AP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sub_NP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sub_ADVSupp)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuppID_R)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CustID_R)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APMode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APDay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NPMode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NPDay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APLimit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CheckLimit)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NotCashCheck)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreditSum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BeginAP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.BeginADV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.APSum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AdvSum)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnChkAP)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UnChkADV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuppNameEn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuppNameSEn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Conditions)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkManEn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.LinkTitalEn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Payment)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DeliWay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sub_CommiR)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Sub_Commi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MarkID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.SuppGrade)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Explain)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Memo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UdefT1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UdefT2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UdefT3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UdefD1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UdefD2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UdefN1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.UdefN2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.RecDay)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pointude)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pointude1)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pointude2)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Pointude3)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppxPath)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SuppID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SuppID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SuppID })
+        </td>
+    </tr>
+}
+
+</table>

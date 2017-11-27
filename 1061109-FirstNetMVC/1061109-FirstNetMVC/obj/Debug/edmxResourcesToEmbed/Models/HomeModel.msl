@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="CBsql_ZZModelStoreContainer" CdmEntityContainer="CBsql_ZZ1434Entities">
+    <EntitySetMapping Name="ComAgent">
+      <EntityTypeMapping TypeName="CBsql_ZZModel.ComAgent">
+        <MappingFragment StoreEntitySet="ComAgent">
+          <ScalarProperty Name="AgentID" ColumnName="AgentID" />
+          <ScalarProperty Name="AgentName" ColumnName="AgentName" />
+          <ScalarProperty Name="AgentNameS" ColumnName="AgentNameS" />
+          <ScalarProperty Name="AtGradeID" ColumnName="AtGradeID" />
+          <ScalarProperty Name="TaxNo" ColumnName="TaxNo" />
+          <ScalarProperty Name="ChiefName" ColumnName="ChiefName" />
+          <ScalarProperty Name="CapTAL" ColumnName="CapTAL" />
+          <ScalarProperty Name="LinkTitle" ColumnName="LinkTitle" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="TelNo" ColumnName="TelNo" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="ZipCode1" ColumnName="ZipCode1" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ZipCode2" ColumnName="ZipCode2" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="LinkMan1" ColumnName="LinkMan1" />
+          <ScalarProperty Name="TelNo1" ColumnName="TelNo1" />
+          <ScalarProperty Name="TelNo2" ColumnName="TelNo2" />
+          <ScalarProperty Name="Mobile1" ColumnName="Mobile1" />
+          <ScalarProperty Name="LinkMan2" ColumnName="LinkMan2" />
+          <ScalarProperty Name="TelNo3" ColumnName="TelNo3" />
+          <ScalarProperty Name="TelNo4" ColumnName="TelNo4" />
+          <ScalarProperty Name="Mobile2" ColumnName="Mobile2" />
+          <ScalarProperty Name="EmplID" ColumnName="EmplID" />
+          <ScalarProperty Name="Empls" ColumnName="Empls" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="Explain" ColumnName="Explain" />
+          <ScalarProperty Name="Memo" ColumnName="Memo" />
+          <ScalarProperty Name="UdefT1" ColumnName="UdefT1" />
+          <ScalarProperty Name="UdefT2" ColumnName="UdefT2" />
+          <ScalarProperty Name="UdefT3" ColumnName="UdefT3" />
+          <ScalarProperty Name="UdefD1" ColumnName="UdefD1" />
+          <ScalarProperty Name="UdefD2" ColumnName="UdefD2" />
+          <ScalarProperty Name="UdefN1" ColumnName="UdefN1" />
+          <ScalarProperty Name="UdefN2" ColumnName="UdefN2" />
+          <ScalarProperty Name="AppxPath" ColumnName="AppxPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComDepar">
+      <EntityTypeMapping TypeName="CBsql_ZZModel.ComDepar">
+        <MappingFragment StoreEntitySet="ComDepar">
+          <ScalarProperty Name="DepartID" ColumnName="DepartID" />
+          <ScalarProperty Name="DepartName" ColumnName="DepartName" />
+          <ScalarProperty Name="DepartNameEn" ColumnName="DepartNameEn" />
+          <ScalarProperty Name="EmplID" ColumnName="EmplID" />
+          <ScalarProperty Name="TelNo" ColumnName="TelNo" />
+          <ScalarProperty Name="Male" ColumnName="Male" />
+          <ScalarProperty Name="Female" ColumnName="Female" />
+          <ScalarProperty Name="JobSchID" ColumnName="JobSchID" />
+          <ScalarProperty Name="Explain" ColumnName="Explain" />
+          <ScalarProperty Name="Memo" ColumnName="Memo" />
+          <ScalarProperty Name="UdefT1" ColumnName="UdefT1" />
+          <ScalarProperty Name="UdefT2" ColumnName="UdefT2" />
+          <ScalarProperty Name="UdefT3" ColumnName="UdefT3" />
+          <ScalarProperty Name="UdefD1" ColumnName="UdefD1" />
+          <ScalarProperty Name="UdefD2" ColumnName="UdefD2" />
+          <ScalarProperty Name="UdefN1" ColumnName="UdefN1" />
+          <ScalarProperty Name="UdefN2" ColumnName="UdefN2" />
+          <ScalarProperty Name="AppxPath" ColumnName="AppxPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComGroup">
+      <EntityTypeMapping TypeName="CBsql_ZZModel.ComGroup">
+        <MappingFragment StoreEntitySet="ComGroup">
+          <ScalarProperty Name="GroupID" ColumnName="GroupID" />
+          <ScalarProperty Name="GroupName" ColumnName="GroupName" />
+          <ScalarProperty Name="GroupNameEn" ColumnName="GroupNameEn" />
+          <ScalarProperty Name="Explain" ColumnName="Explain" />
+          <ScalarProperty Name="Memo" ColumnName="Memo" />
+          <ScalarProperty Name="AppxPath" ColumnName="AppxPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ComSupplier">
+      <EntityTypeMapping TypeName="CBsql_ZZModel.ComSupplier">
+        <MappingFragment StoreEntitySet="ComSupplier">
+          <ScalarProperty Name="SuppID" ColumnName="SuppID" />
+          <ScalarProperty Name="SuppName" ColumnName="SuppName" />
+          <ScalarProperty Name="SuppNameS" ColumnName="SuppNameS" />
+          <ScalarProperty Name="SuppClassID" ColumnName="SuppClassID" />
+          <ScalarProperty Name="Trade" ColumnName="Trade" />
+          <ScalarProperty Name="InvoName" ColumnName="InvoName" />
+          <ScalarProperty Name="RegionID" ColumnName="RegionID" />
+          <ScalarProperty Name="ZipCode" ColumnName="ZipCode" />
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="ZipCode1" ColumnName="ZipCode1" />
+          <ScalarProperty Name="Address1" ColumnName="Address1" />
+          <ScalarProperty Name="ZipCode2" ColumnName="ZipCode2" />
+          <ScalarProperty Name="Address2" ColumnName="Address2" />
+          <ScalarProperty Name="ZipCode3" ColumnName="ZipCode3" />
+          <ScalarProperty Name="Address3" ColumnName="Address3" />
+          <ScalarProperty Name="TaxNo" ColumnName="TaxNo" />
+          <ScalarProperty Name="ChiefName" ColumnName="ChiefName" />
+          <ScalarProperty Name="CapTAL" ColumnName="CapTAL" />
+          <ScalarProperty Name="LinkMan" ColumnName="LinkMan" />
+          <ScalarProperty Name="LinkTitle" ColumnName="LinkTitle" />
+          <ScalarProperty Name="FaxNo" ColumnName="FaxNo" />
+          <ScalarProperty Name="TelNo" ColumnName="TelNo" />
+          <ScalarProperty Name="TelNo1" ColumnName="TelNo1" />
+          <ScalarProperty Name="TelNo2" ColumnName="TelNo2" />
+          <ScalarProperty Name="Mobile1" ColumnName="Mobile1" />
+          <ScalarProperty Name="Mobile2" ColumnName="Mobile2" />
+          <ScalarProperty Name="EmplID" ColumnName="EmplID" />
+          <ScalarProperty Name="Email" ColumnName="Email" />
+          <ScalarProperty Name="WebSite" ColumnName="WebSite" />
+          <ScalarProperty Name="CreateDate" ColumnName="CreateDate" />
+          <ScalarProperty Name="StopDate" ColumnName="StopDate" />
+          <ScalarProperty Name="DeliID" ColumnName="DeliID" />
+          <ScalarProperty Name="InvoMode" ColumnName="InvoMode" />
+          <ScalarProperty Name="SuppID_I" ColumnName="SuppID_I" />
+          <ScalarProperty Name="TaxWay" ColumnName="TaxWay" />
+          <ScalarProperty Name="InvoType" ColumnName="InvoType" />
+          <ScalarProperty Name="CurrencyID" ColumnName="CurrencyID" />
+          <ScalarProperty Name="IsTax" ColumnName="IsTax" />
+          <ScalarProperty Name="ActNo" ColumnName="ActNo" />
+          <ScalarProperty Name="BankID" ColumnName="BankID" />
+          <ScalarProperty Name="PurDate" ColumnName="PurDate" />
+          <ScalarProperty Name="PurRDate" ColumnName="PurRDate" />
+          <ScalarProperty Name="Sub_AP" ColumnName="Sub_AP" />
+          <ScalarProperty Name="Sub_NP" ColumnName="Sub_NP" />
+          <ScalarProperty Name="Sub_ADVSupp" ColumnName="Sub_ADVSupp" />
+          <ScalarProperty Name="SuppID_R" ColumnName="SuppID_R" />
+          <ScalarProperty Name="CustID_R" ColumnName="CustID_R" />
+          <ScalarProperty Name="APMode" ColumnName="APMode" />
+          <ScalarProperty Name="APDay" ColumnName="APDay" />
+          <ScalarProperty Name="NPMode" ColumnName="NPMode" />
+          <ScalarProperty Name="NPDay" ColumnName="NPDay" />
+          <ScalarProperty Name="APLimit" ColumnName="APLimit" />
+          <ScalarProperty Name="CheckLimit" ColumnName="CheckLimit" />
+          <ScalarProperty Name="NotCashCheck" ColumnName="NotCashCheck" />
+          <ScalarProperty Name="CreditSum" ColumnName="CreditSum" />
+          <ScalarProperty Name="BeginAP" ColumnName="BeginAP" />
+          <ScalarProperty Name="BeginADV" ColumnName="BeginADV" />
+          <ScalarProperty Name="APSum" ColumnName="APSum" />
+          <ScalarProperty Name="AdvSum" ColumnName="AdvSum" />
+          <ScalarProperty Name="UnChkAP" ColumnName="UnChkAP" />
+          <ScalarProperty Name="UnChkADV" ColumnName="UnChkADV" />
+          <ScalarProperty Name="SuppNameEn" ColumnName="SuppNameEn" />
+          <ScalarProperty Name="SuppNameSEn" ColumnName="SuppNameSEn" />
+          <ScalarProperty Name="Conditions" ColumnName="Conditions" />
+          <ScalarProperty Name="LinkManEn" ColumnName="LinkManEn" />
+          <ScalarProperty Name="LinkTitalEn" ColumnName="LinkTitalEn" />
+          <ScalarProperty Name="Payment" ColumnName="Payment" />
+          <ScalarProperty Name="DeliWay" ColumnName="DeliWay" />
+          <ScalarProperty Name="Sub_CommiR" ColumnName="Sub_CommiR" />
+          <ScalarProperty Name="Sub_Commi" ColumnName="Sub_Commi" />
+          <ScalarProperty Name="MarkID" ColumnName="MarkID" />
+          <ScalarProperty Name="SuppGrade" ColumnName="SuppGrade" />
+          <ScalarProperty Name="Explain" ColumnName="Explain" />
+          <ScalarProperty Name="Memo" ColumnName="Memo" />
+          <ScalarProperty Name="UdefT1" ColumnName="UdefT1" />
+          <ScalarProperty Name="UdefT2" ColumnName="UdefT2" />
+          <ScalarProperty Name="UdefT3" ColumnName="UdefT3" />
+          <ScalarProperty Name="UdefD1" ColumnName="UdefD1" />
+          <ScalarProperty Name="UdefD2" ColumnName="UdefD2" />
+          <ScalarProperty Name="UdefN1" ColumnName="UdefN1" />
+          <ScalarProperty Name="UdefN2" ColumnName="UdefN2" />
+          <ScalarProperty Name="RecDay" ColumnName="RecDay" />
+          <ScalarProperty Name="Pointude" ColumnName="Pointude" />
+          <ScalarProperty Name="Pointude1" ColumnName="Pointude1" />
+          <ScalarProperty Name="Pointude2" ColumnName="Pointude2" />
+          <ScalarProperty Name="Pointude3" ColumnName="Pointude3" />
+          <ScalarProperty Name="AppxPath" ColumnName="AppxPath" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

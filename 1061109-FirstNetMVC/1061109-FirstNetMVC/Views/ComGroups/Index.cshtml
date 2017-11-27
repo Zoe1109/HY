@@ -1,0 +1,88 @@
+﻿@model IEnumerable<_1061109_FirstNetMVC.Models.ComGroup>
+
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.GroupName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.GroupNameEn)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Explain)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Memo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.AppxPath)
+        </th>
+        <th></th>
+    </tr>
+    
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.GroupName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.GroupNameEn)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Explain)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Memo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.AppxPath)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id = item.GroupID }) |
+            @Html.ActionLink("Details", "Details", new { id = item.GroupID }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.GroupID })
+        </td>
+    </tr>
+}
+
+</table>
+<div style="border:dotted;">
+    <h3>@@Html.Partial("~/Views/ComGroups/AddView.cshtml")</h3>
+    @Html.Partial("~/Views/ComGroups/AddView.cshtml")
+    <p>沒有用到Controller</p>
+</div>
+<br/>
+<div style="border:dotted;">
+    <h3>@@Html.Partial("AddView")</h3>
+    @Html.Partial("AddView")
+    <p>沒有用到Controller</p>
+</div>
+<br />
+<div style="border:dotted;">
+    <h3>@@Html.RenderPartial("AddView")</h3> 
+    @{Html.RenderPartial("AddView");}
+    <p>沒有用到Controller</p>
+</div>
+<br />
+<div style="border:dotted;">
+    <h3>@@Html.RenderAction("AddView");</h3>
+    @{
+        Html.RenderAction("AddView");
+    }
+</div>
+<br />
+<div style="border:dotted;">
+    <h3>@@Html.Action("AddView");</h3>
+        @Html.Action("AddView");
+   
+</div>

@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CBsql_ZZModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="ComAgent">
+    <Key>
+      <PropertyRef Name="AgentID" />
+    </Key>
+    <Property Name="AgentID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AgentName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="AgentNameS" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="AtGradeID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="TaxNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ChiefName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CapTAL" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="LinkTitle" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="FaxNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TelNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="RegionID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="ZipCode1" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="Address1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ZipCode" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ZipCode2" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="Address2" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="LinkMan1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TelNo1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TelNo2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LinkMan2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TelNo3" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TelNo4" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EmplID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Empls" Type="Int32" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Explain" Type="String" MaxLength="68" FixedLength="false" Unicode="true" />
+    <Property Name="Memo" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="UdefT1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UdefT2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UdefT3" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UdefD1" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="UdefD2" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="UdefN1" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="UdefN2" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="AppxPath" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ComDepar">
+    <Key>
+      <PropertyRef Name="DepartID" />
+    </Key>
+    <Property Name="DepartID" Type="String" MaxLength="12" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DepartName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="DepartNameEn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmplID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TelNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Male" Type="Int16" />
+    <Property Name="Female" Type="Int16" />
+    <Property Name="JobSchID" Type="String" MaxLength="10" FixedLength="false" Unicode="true" />
+    <Property Name="Explain" Type="String" MaxLength="68" FixedLength="false" Unicode="true" />
+    <Property Name="Memo" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="UdefT1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UdefT2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UdefT3" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UdefD1" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="UdefD2" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="UdefN1" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="UdefN2" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="AppxPath" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ComGroup">
+    <Key>
+      <PropertyRef Name="GroupID" />
+    </Key>
+    <Property Name="GroupID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="GroupName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="GroupNameEn" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Explain" Type="String" MaxLength="68" FixedLength="false" Unicode="true" />
+    <Property Name="Memo" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="AppxPath" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ComSupplier">
+    <Key>
+      <PropertyRef Name="SuppID" />
+    </Key>
+    <Property Name="SuppID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SuppName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="SuppNameS" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="SuppClassID" Type="String" MaxLength="6" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Trade" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="InvoName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RegionID" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="ZipCode" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ZipCode1" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="Address1" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ZipCode2" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="Address2" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="ZipCode3" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="Address3" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="TaxNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="ChiefName" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CapTAL" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="LinkMan" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="LinkTitle" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="FaxNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TelNo" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TelNo1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TelNo2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Mobile2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="EmplID" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="WebSite" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="CreateDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="StopDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="DeliID" Type="String" MaxLength="2" FixedLength="false" Unicode="true" />
+    <Property Name="InvoMode" Type="Int16" />
+    <Property Name="SuppID_I" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="TaxWay" Type="Int16" />
+    <Property Name="InvoType" Type="Int16" />
+    <Property Name="CurrencyID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="IsTax" Type="Boolean" />
+    <Property Name="ActNo" Type="String" MaxLength="30" FixedLength="false" Unicode="true" />
+    <Property Name="BankID" Type="String" MaxLength="12" FixedLength="false" Unicode="true" />
+    <Property Name="PurDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="PurRDate" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="Sub_AP" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="Sub_NP" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="Sub_ADVSupp" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="SuppID_R" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="CustID_R" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="APMode" Type="Int16" />
+    <Property Name="APDay" Type="Int16" />
+    <Property Name="NPMode" Type="Int16" />
+    <Property Name="NPDay" Type="Int16" />
+    <Property Name="APLimit" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="CheckLimit" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="NotCashCheck" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="CreditSum" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="BeginAP" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="BeginADV" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="APSum" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="AdvSum" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="UnChkAP" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="UnChkADV" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="SuppNameEn" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SuppNameSEn" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Conditions" Type="String" MaxLength="6" FixedLength="false" Unicode="true" />
+    <Property Name="LinkManEn" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="LinkTitalEn" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="Payment" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="DeliWay" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Sub_CommiR" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="Sub_Commi" Type="String" MaxLength="16" FixedLength="false" Unicode="true" />
+    <Property Name="MarkID" Type="String" MaxLength="4" FixedLength="false" Unicode="true" />
+    <Property Name="SuppGrade" Type="String" MaxLength="1" FixedLength="false" Unicode="true" />
+    <Property Name="Explain" Type="String" MaxLength="68" FixedLength="false" Unicode="true" />
+    <Property Name="Memo" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+    <Property Name="UdefT1" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UdefT2" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UdefT3" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <Property Name="UdefD1" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="UdefD2" Type="String" MaxLength="8" FixedLength="false" Unicode="true" />
+    <Property Name="UdefN1" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="UdefN2" Type="Decimal" Precision="24" Scale="9" />
+    <Property Name="RecDay" Type="Int16" />
+    <Property Name="Pointude" Type="String" MaxLength="24" FixedLength="false" Unicode="true" />
+    <Property Name="Pointude1" Type="String" MaxLength="24" FixedLength="false" Unicode="true" />
+    <Property Name="Pointude2" Type="String" MaxLength="24" FixedLength="false" Unicode="true" />
+    <Property Name="Pointude3" Type="String" MaxLength="24" FixedLength="false" Unicode="true" />
+    <Property Name="AppxPath" Type="String" MaxLength="4000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityContainer Name="CBsql_ZZ1434Entities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ComAgent" EntityType="Self.ComAgent" />
+    <EntitySet Name="ComDepar" EntityType="Self.ComDepar" />
+    <EntitySet Name="ComGroup" EntityType="Self.ComGroup" />
+    <EntitySet Name="ComSupplier" EntityType="Self.ComSupplier" />
+  </EntityContainer>
+</Schema>

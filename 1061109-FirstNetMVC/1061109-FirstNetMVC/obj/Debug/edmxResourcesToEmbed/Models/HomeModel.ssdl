@@ -1,0 +1,178 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="CBsql_ZZModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="ComAgent">
+    <Key>
+      <PropertyRef Name="AgentID" />
+    </Key>
+    <Property Name="AgentID" Type="nvarchar" MaxLength="10" Nullable="false" />
+    <Property Name="AgentName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="AgentNameS" Type="nvarchar" MaxLength="10" />
+    <Property Name="AtGradeID" Type="nvarchar" MaxLength="4" />
+    <Property Name="TaxNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="ChiefName" Type="nvarchar" MaxLength="20" />
+    <Property Name="CapTAL" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="LinkTitle" Type="nvarchar" MaxLength="20" />
+    <Property Name="FaxNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="TelNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="RegionID" Type="nvarchar" MaxLength="8" />
+    <Property Name="ZipCode1" Type="nvarchar" MaxLength="12" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="150" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="Address" Type="nvarchar" MaxLength="150" />
+    <Property Name="ZipCode2" Type="nvarchar" MaxLength="12" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="150" />
+    <Property Name="LinkMan1" Type="nvarchar" MaxLength="20" />
+    <Property Name="TelNo1" Type="nvarchar" MaxLength="20" />
+    <Property Name="TelNo2" Type="nvarchar" MaxLength="20" />
+    <Property Name="Mobile1" Type="nvarchar" MaxLength="20" />
+    <Property Name="LinkMan2" Type="nvarchar" MaxLength="20" />
+    <Property Name="TelNo3" Type="nvarchar" MaxLength="20" />
+    <Property Name="TelNo4" Type="nvarchar" MaxLength="20" />
+    <Property Name="Mobile2" Type="nvarchar" MaxLength="20" />
+    <Property Name="EmplID" Type="nvarchar" MaxLength="20" />
+    <Property Name="Empls" Type="int" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="Explain" Type="nvarchar" MaxLength="68" />
+    <Property Name="Memo" Type="nvarchar" MaxLength="4000" />
+    <Property Name="UdefT1" Type="nvarchar" MaxLength="20" />
+    <Property Name="UdefT2" Type="nvarchar" MaxLength="20" />
+    <Property Name="UdefT3" Type="nvarchar" MaxLength="20" />
+    <Property Name="UdefD1" Type="nvarchar" MaxLength="8" />
+    <Property Name="UdefD2" Type="nvarchar" MaxLength="8" />
+    <Property Name="UdefN1" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="UdefN2" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="AppxPath" Type="nvarchar" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="ComDepar">
+    <Key>
+      <PropertyRef Name="DepartID" />
+    </Key>
+    <Property Name="DepartID" Type="nvarchar" MaxLength="12" Nullable="false" />
+    <Property Name="DepartName" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="DepartNameEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="EmplID" Type="nvarchar" MaxLength="20" />
+    <Property Name="TelNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="Male" Type="smallint" />
+    <Property Name="Female" Type="smallint" />
+    <Property Name="JobSchID" Type="nvarchar" MaxLength="10" />
+    <Property Name="Explain" Type="nvarchar" MaxLength="68" />
+    <Property Name="Memo" Type="nvarchar" MaxLength="4000" />
+    <Property Name="UdefT1" Type="nvarchar" MaxLength="20" />
+    <Property Name="UdefT2" Type="nvarchar" MaxLength="20" />
+    <Property Name="UdefT3" Type="nvarchar" MaxLength="20" />
+    <Property Name="UdefD1" Type="nvarchar" MaxLength="8" />
+    <Property Name="UdefD2" Type="nvarchar" MaxLength="8" />
+    <Property Name="UdefN1" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="UdefN2" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="AppxPath" Type="nvarchar" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="ComGroup">
+    <Key>
+      <PropertyRef Name="GroupID" />
+    </Key>
+    <Property Name="GroupID" Type="nvarchar" MaxLength="8" Nullable="false" />
+    <Property Name="GroupName" Type="nvarchar" MaxLength="20" />
+    <Property Name="GroupNameEn" Type="nvarchar" MaxLength="20" />
+    <Property Name="Explain" Type="nvarchar" MaxLength="68" />
+    <Property Name="Memo" Type="nvarchar" MaxLength="4000" />
+    <Property Name="AppxPath" Type="nvarchar" MaxLength="4000" />
+  </EntityType>
+  <EntityType Name="ComSupplier">
+    <Key>
+      <PropertyRef Name="SuppID" />
+    </Key>
+    <Property Name="SuppID" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="SuppName" Type="nvarchar" MaxLength="50" Nullable="false" />
+    <Property Name="SuppNameS" Type="nvarchar" MaxLength="12" />
+    <Property Name="SuppClassID" Type="nvarchar" MaxLength="6" Nullable="false" />
+    <Property Name="Trade" Type="nvarchar" MaxLength="20" />
+    <Property Name="InvoName" Type="nvarchar" MaxLength="50" />
+    <Property Name="RegionID" Type="nvarchar" MaxLength="8" />
+    <Property Name="ZipCode" Type="nvarchar" MaxLength="12" />
+    <Property Name="Address" Type="nvarchar" MaxLength="150" />
+    <Property Name="ZipCode1" Type="nvarchar" MaxLength="12" />
+    <Property Name="Address1" Type="nvarchar" MaxLength="150" />
+    <Property Name="ZipCode2" Type="nvarchar" MaxLength="12" />
+    <Property Name="Address2" Type="nvarchar" MaxLength="150" />
+    <Property Name="ZipCode3" Type="nvarchar" MaxLength="12" />
+    <Property Name="Address3" Type="nvarchar" MaxLength="150" />
+    <Property Name="TaxNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="ChiefName" Type="nvarchar" MaxLength="20" />
+    <Property Name="CapTAL" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="LinkMan" Type="nvarchar" MaxLength="20" />
+    <Property Name="LinkTitle" Type="nvarchar" MaxLength="20" />
+    <Property Name="FaxNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="TelNo" Type="nvarchar" MaxLength="20" />
+    <Property Name="TelNo1" Type="nvarchar" MaxLength="20" />
+    <Property Name="TelNo2" Type="nvarchar" MaxLength="20" />
+    <Property Name="Mobile1" Type="nvarchar" MaxLength="20" />
+    <Property Name="Mobile2" Type="nvarchar" MaxLength="20" />
+    <Property Name="EmplID" Type="nvarchar" MaxLength="20" />
+    <Property Name="Email" Type="nvarchar" MaxLength="50" />
+    <Property Name="WebSite" Type="nvarchar" MaxLength="50" />
+    <Property Name="CreateDate" Type="nvarchar" MaxLength="8" />
+    <Property Name="StopDate" Type="nvarchar" MaxLength="8" />
+    <Property Name="DeliID" Type="nvarchar" MaxLength="2" />
+    <Property Name="InvoMode" Type="smallint" />
+    <Property Name="SuppID_I" Type="nvarchar" MaxLength="20" />
+    <Property Name="TaxWay" Type="smallint" />
+    <Property Name="InvoType" Type="smallint" />
+    <Property Name="CurrencyID" Type="nvarchar" MaxLength="4" />
+    <Property Name="IsTax" Type="bit" />
+    <Property Name="ActNo" Type="nvarchar" MaxLength="30" />
+    <Property Name="BankID" Type="nvarchar" MaxLength="12" />
+    <Property Name="PurDate" Type="nvarchar" MaxLength="8" />
+    <Property Name="PurRDate" Type="nvarchar" MaxLength="8" />
+    <Property Name="Sub_AP" Type="nvarchar" MaxLength="16" />
+    <Property Name="Sub_NP" Type="nvarchar" MaxLength="16" />
+    <Property Name="Sub_ADVSupp" Type="nvarchar" MaxLength="16" />
+    <Property Name="SuppID_R" Type="nvarchar" MaxLength="20" />
+    <Property Name="CustID_R" Type="nvarchar" MaxLength="20" />
+    <Property Name="APMode" Type="smallint" />
+    <Property Name="APDay" Type="smallint" />
+    <Property Name="NPMode" Type="smallint" />
+    <Property Name="NPDay" Type="smallint" />
+    <Property Name="APLimit" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="CheckLimit" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="NotCashCheck" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="CreditSum" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="BeginAP" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="BeginADV" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="APSum" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="AdvSum" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="UnChkAP" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="UnChkADV" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="SuppNameEn" Type="nvarchar" MaxLength="100" />
+    <Property Name="SuppNameSEn" Type="nvarchar" MaxLength="20" />
+    <Property Name="Conditions" Type="nvarchar" MaxLength="6" />
+    <Property Name="LinkManEn" Type="nvarchar" MaxLength="50" />
+    <Property Name="LinkTitalEn" Type="nvarchar" MaxLength="20" />
+    <Property Name="Payment" Type="nvarchar" MaxLength="150" />
+    <Property Name="DeliWay" Type="nvarchar" MaxLength="50" />
+    <Property Name="Sub_CommiR" Type="nvarchar" MaxLength="16" />
+    <Property Name="Sub_Commi" Type="nvarchar" MaxLength="16" />
+    <Property Name="MarkID" Type="nvarchar" MaxLength="4" />
+    <Property Name="SuppGrade" Type="nvarchar" MaxLength="1" />
+    <Property Name="Explain" Type="nvarchar" MaxLength="68" />
+    <Property Name="Memo" Type="nvarchar" MaxLength="4000" />
+    <Property Name="UdefT1" Type="nvarchar" MaxLength="20" />
+    <Property Name="UdefT2" Type="nvarchar" MaxLength="20" />
+    <Property Name="UdefT3" Type="nvarchar" MaxLength="20" />
+    <Property Name="UdefD1" Type="nvarchar" MaxLength="8" />
+    <Property Name="UdefD2" Type="nvarchar" MaxLength="8" />
+    <Property Name="UdefN1" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="UdefN2" Type="decimal" Precision="24" Scale="9" />
+    <Property Name="RecDay" Type="smallint" />
+    <Property Name="Pointude" Type="nvarchar" MaxLength="24" />
+    <Property Name="Pointude1" Type="nvarchar" MaxLength="24" />
+    <Property Name="Pointude2" Type="nvarchar" MaxLength="24" />
+    <Property Name="Pointude3" Type="nvarchar" MaxLength="24" />
+    <Property Name="AppxPath" Type="nvarchar" MaxLength="4000" />
+  </EntityType>
+  <EntityContainer Name="CBsql_ZZModelStoreContainer">
+    <EntitySet Name="ComAgent" EntityType="Self.ComAgent" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ComDepar" EntityType="Self.ComDepar" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ComGroup" EntityType="Self.ComGroup" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="ComSupplier" EntityType="Self.ComSupplier" Schema="dbo" store:Type="Tables" />
+  </EntityContainer>
+</Schema>

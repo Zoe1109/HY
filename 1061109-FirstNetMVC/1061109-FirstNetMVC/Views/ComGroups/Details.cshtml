@@ -1,0 +1,58 @@
+﻿@model _1061109_FirstNetMVC.Models.ComGroup
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>ComGroup</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.GroupName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GroupName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.GroupNameEn)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.GroupNameEn)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Explain)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Explain)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Memo)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Memo)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.AppxPath)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AppxPath)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.GroupID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

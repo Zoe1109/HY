@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "About關於";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<p>Use this area to provide additional information.</p>
+
+<div>
+    <p>@@123</p><br />
+    @*<p>@123</p>*@ <!-- 會出現錯誤.掛掉 -->
+   
+    @*  輸出@ 符號 *@
+    <p>HY@gmail.com</p>
+    <p>123@456</p>
+
+    <p>註解的方式
+    <text>@@</text><text>*</text>
+    <text> </text><text>*</text><text>@@</text> </p>
+    @*
+       這是註解    
+    *@
+    <br />
+    <p>
+        使用  @@變數名稱 <br/>  
+        @@DateTime.Now →　@DateTime.Now
+    </p>
+
+    <p>
+        使用  @@()   陳述式  <br />
+        5X3=@(5 * 3 )<br />
+    </p>
+
+    <p>
+        使用  @@{}   程式碼區塊。
+        @for (int i = 1; i < 5; i++)
+        {
+            if (i % 2 == 0)
+            {
+                @:偶數
+            }
+            else
+            {
+                @:奇數
+            }
+        }
+    </p>
+    <br />
+    <p>
+        使用 <text><</text> <text>text</text><text>></text> 文字區塊<br />
+
+        @for (int i = 1; i <= 10; i++)
+        {
+            if (i % 2 == 0)
+            {
+                <text> i = </text> @i <text> ; 是偶數 </text>
+            }
+            else
+            { <text> i= </text> @i <text> ; 是奇數 </text> }
+            <br />
+        }
+    </p>  
+
+</div>
