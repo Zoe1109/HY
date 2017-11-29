@@ -1,0 +1,114 @@
+﻿@model Guestbooks_MVC_Z2.ViewModels.GuestbookView
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+<hr />
+
+<table style="border: groove;">
+    @* 如果資料庫中不是0筆資料 則顯示資料,並列出 新增 刪除 連結 *@
+
+    @if (!Model.DataList.Count.Equals(0))
+    {
+        foreach (var item in Model.DataList)
+        {
+            <tr style="height:20px;">
+                <td style="width:80px;text-align:left;">
+                    @* For 強型別 *@
+                    姓名:
+                    @*@Html.DisplayNameFor(model => model.DataList[0].Name)*@
+                </td>
+                <td style="width:100px;text-align:left;">
+                    @item.Name
+                </td>
+                <td style="width:80px;text-align:left;">
+                    留言時間:
+                    @*@Html.DisplayNameFor(model => model.DataList[0].CreateTine)*@
+                </td>
+                <td style="width:200px;text-align:left;">
+                    @item.CreateTine
+                </td>
+                
+            </tr>
+            @*-------------------*@
+            <tr>
+                <td style="width:80px;text-align:left;">
+                    留言內容:
+                    @*@Html.DisplayNameFor(model => model.DataList[0].Content)*@
+                </td>
+                <td colspan="3" style="width:300px;text-align:left;">
+                    @item.Content
+                </td>               
+            </tr>
+            @*---------------------------*@
+            <tr>
+                <td  style="width:80px;text-align:left;">
+                    回覆內容:
+                    @*@Html.DisplayNameFor(model => model.DataList[0].Reply)*@
+                </td>
+                <td colspan="3" style="width:100px;text-align:left;">
+                    @item.Reply
+                </td>
+            </tr>
+
+            <tr>
+                @*<td style="width:80px;text-align:left;">  
+                    
+                </td>
+                <td style="width:100px;text-align:left;">
+                    
+                </td>*@
+                <td style="width:80px;text-align:left;">
+                    回覆時間:
+                    @*@Html.DisplayNameFor(model => model.DataList[0].ReplyTime)*@
+                </td>
+                <td  colspan="3" style="width:200px;text-align:left;">
+                    @item.ReplyTime
+                </td>
+                @*<td colspan="2" >
+                    
+                </td>*@   
+            </tr>
+        }
+    }
+    else
+    {
+        <tr colspan="4">
+            <td>
+                資料庫內無資料
+            </td>            
+        </tr>
+    }
+
+
+</table>
+
+
+<hr />
+@*
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+        <h4>GuestbookView</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Create" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+    *@
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

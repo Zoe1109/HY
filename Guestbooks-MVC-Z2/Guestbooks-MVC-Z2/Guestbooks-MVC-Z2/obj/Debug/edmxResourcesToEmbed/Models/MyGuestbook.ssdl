@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MyGuestbookModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <!--產生期間發現錯誤:
+警告 6002: 資料表/檢視 'CBsql_ZZ.dbo.Guestbooks' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。-->
+  <EntityType Name="Guestbooks">
+    <Key>
+      <PropertyRef Name="Id" />
+      <PropertyRef Name="Name" />
+      <PropertyRef Name="Content" />
+      <PropertyRef Name="CreateTine" />
+    </Key>
+    <Property Name="Id" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" MaxLength="20" Nullable="false" />
+    <Property Name="Content" Type="nvarchar" MaxLength="100" Nullable="false" />
+    <Property Name="CreateTine" Type="datetime" Nullable="false" />
+    <Property Name="Reply" Type="nvarchar" MaxLength="100" />
+    <Property Name="ReplyTime" Type="datetime" />
+  </EntityType>
+  <EntityContainer Name="MyGuestbookModelStoreContainer">
+    <EntitySet Name="Guestbooks" EntityType="Self.Guestbooks" store:Type="Tables" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [Guestbooks].[Id] AS [Id], 
+    [Guestbooks].[Name] AS [Name], 
+    [Guestbooks].[Content] AS [Content], 
+    [Guestbooks].[CreateTine] AS [CreateTine], 
+    [Guestbooks].[Reply] AS [Reply], 
+    [Guestbooks].[ReplyTime] AS [ReplyTime]
+    FROM [dbo].[Guestbooks] AS [Guestbooks]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>
