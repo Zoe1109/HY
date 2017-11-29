@@ -26,5 +26,8 @@ namespace Guestbooks_MVC_Z2.Controllers
             //將頁面資料傳入View中
             return View(Data);
         }
+
+
+
     }
 }
