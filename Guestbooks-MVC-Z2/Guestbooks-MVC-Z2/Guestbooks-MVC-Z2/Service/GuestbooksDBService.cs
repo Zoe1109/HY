@@ -24,6 +24,14 @@ namespace Guestbooks_MVC_Z2.Service
         {
             //設定新增時間為現在
             newData.CreateTine = DateTime.Now;
+
+            //將資料加入資料庫實體
+            db.Guestbooks.Add(newData);
+
+            //儲存資料庫變更
+            db.SaveChanges();
+
+
         }
 
 
